@@ -35,9 +35,9 @@
             email = new TextBox();
             senha = new TextBox();
             title_login = new Label();
-            label2 = new Label();
             acessar = new Button();
             checkBox1 = new CheckBox();
+            linkLabel1 = new LinkLabel();
             SuspendLayout();
             // 
             // email
@@ -54,7 +54,7 @@
             // 
             senha.AcceptsReturn = true;
             senha.Cursor = Cursors.IBeam;
-            senha.Location = new Point(262, 237);
+            senha.Location = new Point(262, 232);
             senha.Multiline = true;
             senha.Name = "senha";
             senha.Size = new Size(290, 25);
@@ -64,25 +64,13 @@
             // 
             title_login.AutoSize = true;
             title_login.BackColor = Color.Transparent;
-            title_login.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            title_login.Location = new Point(251, 87);
+            title_login.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            title_login.Location = new Point(246, 60);
             title_login.Margin = new Padding(0);
             title_login.Name = "title_login";
-            title_login.Size = new Size(80, 31);
+            title_login.Size = new Size(142, 55);
             title_login.TabIndex = 0;
             title_login.Text = "Login";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(450, 335);
-            label2.Margin = new Padding(0);
-            label2.Name = "label2";
-            label2.Size = new Size(102, 13);
-            label2.TabIndex = 1;
-            label2.Text = "Esqueceu a senha?";
             // 
             // acessar
             // 
@@ -100,12 +88,30 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
+            checkBox1.BackColor = Color.Transparent;
+            checkBox1.Cursor = Cursors.Hand;
             checkBox1.Location = new Point(262, 333);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(126, 19);
             checkBox1.TabIndex = 2;
             checkBox1.Text = "Lembre-se de mim";
-            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.UseVisualStyleBackColor = false;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.ActiveLinkColor = Color.Black;
+            linkLabel1.AutoSize = true;
+            linkLabel1.BackColor = Color.Transparent;
+            linkLabel1.Cursor = Cursors.Hand;
+            linkLabel1.DisabledLinkColor = Color.Black;
+            linkLabel1.LinkColor = Color.Black;
+            linkLabel1.Location = new Point(447, 334);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(105, 15);
+            linkLabel1.TabIndex = 3;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Esqueceu a senha?";
+            linkLabel1.VisitedLinkColor = Color.Black;
             // 
             // Form1
             // 
@@ -113,9 +119,9 @@
             BackgroundImage = PIM_ERP.Properties.Resources.login;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(800, 450);
+            Controls.Add(linkLabel1);
             Controls.Add(checkBox1);
             Controls.Add(title_login);
-            Controls.Add(label2);
             Controls.Add(email);
             Controls.Add(senha);
             Controls.Add(acessar);
@@ -127,8 +133,7 @@
         }
 
         #endregion
-
-        private Label label2;
         private CheckBox checkBox1;
+        private LinkLabel linkLabel1;
     }
 }
