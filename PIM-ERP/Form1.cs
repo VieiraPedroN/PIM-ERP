@@ -13,14 +13,14 @@ namespace PIM
 
             // Ação de remover e adicionar os textos
 
-            email.GotFocus += textoEmail_GotFocus;
-            email.LostFocus += textoEmail_LostFocus;
+            email.GotFocus += TextoEmail_GotFocus;
+            email.LostFocus += TextoEmail_LostFocus;
 
-            senha.GotFocus += textoSenha_GotFocus;
-            senha.LostFocus += textoSenha_LostFocus;
+            senha.GotFocus += TextoSenha_GotFocus;
+            senha.LostFocus += TextoSenha_LostFocus;
         }
 
-        private void textoEmail_GotFocus(object sender, EventArgs e)
+        private void TextoEmail_GotFocus(object sender, EventArgs e)
         {
             if (email.Text == "E-mail")
             {
@@ -28,7 +28,7 @@ namespace PIM
                 email.ForeColor = System.Drawing.Color.Black;
             }
         }
-        private void textoEmail_LostFocus(object sender, EventArgs e)
+        private void TextoEmail_LostFocus(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(email.Text))
             {
@@ -36,7 +36,7 @@ namespace PIM
                 email.ForeColor = System.Drawing.Color.Gray;
             }
         }
-        private void textoSenha_GotFocus(Object sender, EventArgs e)
+        private void TextoSenha_GotFocus(Object sender, EventArgs e)
         {
             if (senha.Text == "Senha")
             {
@@ -44,7 +44,7 @@ namespace PIM
                 senha.ForeColor = System.Drawing.Color.Black;
             }
         }
-        private void textoSenha_LostFocus(Object sender, EventArgs e)
+        private void TextoSenha_LostFocus(Object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(senha.Text))
             {
