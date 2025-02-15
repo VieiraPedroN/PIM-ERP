@@ -87,8 +87,8 @@
             // 
             acessar.BackColor = Color.SlateBlue;
             acessar.Cursor = Cursors.Hand;
-            acessar.FlatStyle = FlatStyle.Flat;
             acessar.FlatAppearance.BorderSize = 0;
+            acessar.FlatStyle = FlatStyle.Flat;
             acessar.Location = new Point(262, 289);
             acessar.Name = "acessar";
             acessar.Size = new Size(290, 35);
@@ -109,6 +109,7 @@
             Controls.Add(acessar);
             Name = "Form1";
             Text = "PIM";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }

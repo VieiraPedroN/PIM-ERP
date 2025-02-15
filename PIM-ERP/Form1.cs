@@ -52,5 +52,19 @@ namespace PIM
                 senha.ForeColor = System.Drawing.Color.Gray;
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            ActiveControl = email;
+            ActiveControl = senha;
+            ActiveControl = acessar;
+        }
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (!email.Bounds.Contains(e.Location))
+            {
+                this.ActiveControl = null;
+            }
+        }
     }
 }
