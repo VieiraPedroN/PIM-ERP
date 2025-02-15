@@ -37,6 +37,7 @@
             title_login = new Label();
             label2 = new Label();
             acessar = new Button();
+            checkBox1 = new CheckBox();
             SuspendLayout();
             // 
             // email
@@ -76,7 +77,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(262, 349);
+            label2.Location = new Point(450, 335);
             label2.Margin = new Padding(0);
             label2.Name = "label2";
             label2.Size = new Size(102, 13);
@@ -96,12 +97,23 @@
             acessar.Text = "Acessar";
             acessar.UseVisualStyleBackColor = false;
             // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(262, 333);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(126, 19);
+            checkBox1.TabIndex = 2;
+            checkBox1.Text = "Lembre-se de mim";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             BackColor = Color.MediumSlateBlue;
             BackgroundImage = PIM_ERP.Properties.Resources.login;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(800, 450);
+            Controls.Add(checkBox1);
             Controls.Add(title_login);
             Controls.Add(label2);
             Controls.Add(email);
@@ -117,5 +129,6 @@
         #endregion
 
         private Label label2;
+        private CheckBox checkBox1;
     }
 }
