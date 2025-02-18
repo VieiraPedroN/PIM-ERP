@@ -42,9 +42,10 @@
             // 
             // email
             // 
+            email.Anchor = AnchorStyles.None;
             email.Cursor = Cursors.IBeam;
             email.ImeMode = ImeMode.NoControl;
-            email.Location = new Point(315, 178);
+            email.Location = new Point(253, 181);
             email.Multiline = true;
             email.Name = "email";
             email.Size = new Size(290, 25);
@@ -53,8 +54,9 @@
             // senha
             // 
             senha.AcceptsReturn = true;
+            senha.Anchor = AnchorStyles.None;
             senha.Cursor = Cursors.IBeam;
-            senha.Location = new Point(315, 232);
+            senha.Location = new Point(253, 236);
             senha.Multiline = true;
             senha.Name = "senha";
             senha.Size = new Size(290, 25);
@@ -62,10 +64,11 @@
             // 
             // title_login
             // 
+            title_login.Anchor = AnchorStyles.None;
             title_login.AutoSize = true;
             title_login.BackColor = Color.Transparent;
             title_login.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            title_login.Location = new Point(299, 60);
+            title_login.Location = new Point(237, 61);
             title_login.Margin = new Padding(0);
             title_login.Name = "title_login";
             title_login.Size = new Size(176, 69);
@@ -74,11 +77,12 @@
             // 
             // acessar
             // 
+            acessar.Anchor = AnchorStyles.None;
             acessar.BackColor = Color.SlateBlue;
             acessar.Cursor = Cursors.Hand;
             acessar.FlatAppearance.BorderSize = 0;
             acessar.FlatStyle = FlatStyle.Flat;
-            acessar.Location = new Point(315, 289);
+            acessar.Location = new Point(253, 290);
             acessar.Name = "acessar";
             acessar.Size = new Size(290, 35);
             acessar.TabIndex = 0;
@@ -87,10 +91,11 @@
             // 
             // checkBox1
             // 
+            checkBox1.Anchor = AnchorStyles.None;
             checkBox1.AutoSize = true;
             checkBox1.BackColor = Color.Transparent;
             checkBox1.Cursor = Cursors.Hand;
-            checkBox1.Location = new Point(315, 333);
+            checkBox1.Location = new Point(253, 334);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(156, 24);
             checkBox1.TabIndex = 2;
@@ -100,12 +105,13 @@
             // linkLabel1
             // 
             linkLabel1.ActiveLinkColor = Color.Black;
+            linkLabel1.Anchor = AnchorStyles.None;
             linkLabel1.AutoSize = true;
             linkLabel1.BackColor = Color.Transparent;
             linkLabel1.Cursor = Cursors.Hand;
             linkLabel1.DisabledLinkColor = Color.Black;
             linkLabel1.LinkColor = Color.Black;
-            linkLabel1.Location = new Point(473, 333);
+            linkLabel1.Location = new Point(411, 334);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(132, 20);
             linkLabel1.TabIndex = 3;
@@ -117,8 +123,8 @@
             // 
             BackColor = Color.MediumSlateBlue;
             BackgroundImage = PIM_ERP.Properties.Resources.login;
-            BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(944, 491);
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(782, 453);
             Controls.Add(linkLabel1);
             Controls.Add(checkBox1);
             Controls.Add(title_login);

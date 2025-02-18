@@ -59,12 +59,6 @@ namespace PIM
             ActiveControl = senha;
             ActiveControl = acessar;
         }
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (!email.Bounds.Contains(e.Location))
-            {
-                this.ActiveControl = null;
-            }
-        }
+
     }
 }
